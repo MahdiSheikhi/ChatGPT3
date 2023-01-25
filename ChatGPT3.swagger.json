@@ -1,0 +1,154 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "ChatGPT3",
+    "description": "",
+    "version": "1.0"
+  },
+  "host": "api.openai.com",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/v1/completions": {
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "id"
+                },
+                "object": {
+                  "type": "string",
+                  "description": "object"
+                },
+                "created": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "created"
+                },
+                "model": {
+                  "type": "string",
+                  "description": "model"
+                },
+                "choices": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "text": {
+                        "type": "string",
+                        "description": "text"
+                      },
+                      "index": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "index"
+                      },
+                      "logprobs": {
+                        "type": "string",
+                        "description": "logprobs"
+                      },
+                      "finish_reason": {
+                        "type": "string",
+                        "description": "finish_reason"
+                      }
+                    }
+                  },
+                  "description": "choices"
+                },
+                "usage": {
+                  "type": "object",
+                  "properties": {
+                    "prompt_tokens": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "prompt_tokens"
+                    },
+                    "completion_tokens": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "completion_tokens"
+                    },
+                    "total_tokens": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "total_tokens"
+                    }
+                  },
+                  "description": "usage"
+                }
+              }
+            }
+          }
+        },
+        "operationId": "1",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "model": {
+                  "type": "string",
+                  "description": "model"
+                },
+                "prompt": {
+                  "type": "string",
+                  "description": "prompt"
+                },
+                "temperature": {
+                  "type": "number",
+                  "format": "float",
+                  "description": "temperature"
+                },
+                "max_tokens": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "max_tokens"
+                },
+                "top_p": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "top_p"
+                },
+                "frequency_penalty": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "frequency_penalty"
+                },
+                "presence_penalty": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "presence_penalty"
+                }
+              }
+            }
+          }
+        ],
+        "summary": "completions"
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {
+    "api_key": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "Authorization"
+    }
+  },
+  "security": [],
+  "tags": []
+}
