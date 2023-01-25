@@ -1,5 +1,5 @@
 # ChatGPT3
-Chat GPT-3 Power Automate Custom Connector
+ChatGPT3 Power Automate Custom Connector
 
 This repo was developed by @MahdiSheikhi Follow or connect with me on [my LinkedIn](https://www.linkedin.com/in/mahdisheikhi/).
 
@@ -7,7 +7,7 @@ You can use simple custom connector of PowerAutomate for using direct api of Ope
 
 In first step yo need to provide [OpenAI Api key](https://beta.openai.com/account/api-keys)
 
-Next Step you need [Create Custom Connectors for Power Automate](https://learn.microsoft.com/en-us/connectors/custom-connectors/define-blank) and you can use [Create Custom Connectors Power Automate from OpenApi definition](https://learn.microsoft.com/en-us/connectors/custom-connectors/define-openapi-definition) resource for better understanding of custom connectors.
+Next Step you need [Create Custom Connectors for Power Automate](https://learn.microsoft.com/en-us/connectors/custom-connectors/define-blank) and you can use swagger json file for [Create Custom Connectors Power Automate from OpenApi definition](https://learn.microsoft.com/en-us/connectors/custom-connectors/define-openapi-definition) resource for better understanding of custom connectors.
 
 After creating custom connector and set your ApiKey you can use this connector in PowerAutomate or PowerApps and send your questions directly OpenAPI api and using ChatGPT.
 
